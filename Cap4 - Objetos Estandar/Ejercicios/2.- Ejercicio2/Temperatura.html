@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/TemLocal.js"></script>
+    <title>Temperatura local</title>
+    <style>
+        table td{
+            border: black solid 2px;
+        }
+        section{
+            height: 100%;
+            width: 50%;
+            border: solid black 2px;
+            text-align: center;
+            margin: auto;
+            padding: 8%;
+            padding-top: 50px;
+            align-items: flex-start;
+        }
+        section table{
+            padding-left: 28%;
+        }
+        section button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Temperatura</h1>
+    <label for="temperatura">Temperatura actual</label>
+    <input type="text" id="temperatura" name="temperatura"> °</input>
+    <br>
+    <button type="button" onclick="calcular()">Calcular</button>
+    <br><br>
+    <ul id="resultados" style="display: none;">
+        <li id="funArTemp"></li>
+        <li id="funPromedio"></li>
+        <li id="numMayor"></li>
+        <li id="numMenor"></li>
+        <li id="varianza"></li>
+    </ul>
+</body>
+</html>

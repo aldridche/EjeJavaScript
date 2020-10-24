@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par o impar</title>
+</head>
+<body>
+    <script>
+        //Escribe un programa que, al recibir una lista de números enteros, determine cuántos de estos números son pares y cuántos son impares
+        //Datos: Listado
+        //Donde: 
+        //Listado: Variable de tipo array numérico que contiene números a evaluar
+        let parImpar =[33,44,55,44,55,77,88,99,22,1,5];
+        var recorre = 0;
+        function recoPI(parImpar, recorre) {
+            par = 0;
+            impar = 0;
+            for(var i = 0; i < parImpar.length; i++) {
+                recorre = parImpar[i];
+
+                if((recorre%2)==0 ){
+                    console.log('El numero '+recorre+' par <br/>');
+                    document.write('El numero '+recorre+' par<br/>');
+                }
+                else {
+                    console.log('El numero '+recorre+' impar<br/>');
+                    document.write('El numero '+recorre+' impar<br/>');
+                    
+                }  
+            }
+        }
+        document.write(recoPI(parImpar, recorre));
+    </script>
+    
+</body>
+</html>

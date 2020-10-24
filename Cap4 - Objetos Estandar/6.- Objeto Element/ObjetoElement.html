@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto element</title>
+    <script src="JS/ObjetoElement.js"></script>
+    <style>
+        .colorNegro{
+            background: black;
+            color: cornsilk;
+            width: 700;
+        }
+        .colorAzul{
+            background: blue;
+            color: cornsilk;
+            width: 900;
+        }
+    </style>
+</head>
+<body onload="iniciar()">
+    <section>
+        <h1>WebSite</h1>
+        <p id="subtitulo" class="colorAzul">El mejor sitio wen</p>
+        <p id="contenido">Estamos trabajando con el objeto document</p>
+        <div id="introduccion">
+            <p id="tema">Temas</p>
+            <p id="contenido">Menu</p>
+        </div>
+    </section>
+    <button type="button" onclick="modificarProps()">Modificar propiedades</button>
+    <button type="button" onclick="ponerColor()">Cambiar el color</button>
+    <button type="button" onclick="cambiarColor()">toggle color</button>
+    <button type="button" onclick="cambiarText()">Change text</button>
+    <button type="button" onclick="addElement()">add element</button>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = 1234;
+
+        function invertirDigitos(numero)
+        { 
+          var invertido = 0
+          var resto = numero
+          do {
+            invertido = invertido * 10 + (resto % 10)
+            resto = Math.floor(resto / 10)
+          } while ( resto > 0 )
+          return invertido
+        }        
+        var funInversa = invertirDigitos(numero);
+        document.write('El inverso del numero '+numero+' => '+funInversa);
+    </script>
+    
+</body>
+</html>
