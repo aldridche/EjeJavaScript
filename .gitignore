@@ -1,0 +1,5 @@
+*.py
+*.docs
+*.txt
+
+test/
